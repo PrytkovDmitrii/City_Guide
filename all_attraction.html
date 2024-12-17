@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <title>Достопримечательности</title>
+</head>
+<body id = "body">
+    <header class="header" id="header">
+        <div class="container" id = "line">
+            <div class="header__prev" id = 'header__prev'>
+                <a href="Attractions.html" class="header__prev-btn">
+                    ⬅ Вернуться на страницу
+                </a>
+                <form class="header__switch" id="returnBlack">
+                    <img class="header__switch-img" src="./assest/image/result_3dac58864881d859b7da50510e9daa13-no-bg-preview (carve.photos).png" width="40" alt="" id = 'sun'>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="attractions__all">
+        <div class="attractions__container">
+            <nav class="attractions__sort"> 
+                <ul class="attractions__sort" id = "attractions__sort">
+                    <li data-f = "box" id="box" class="attractions__sort-btn">Все</li> 
+                    <li data-f = "museum" class="attractions__sort-btn">Музеи</li> 
+                    <li data-f = "teatr" class="attractions__sort-btn">Театры</li> 
+                    <li data-f = "temple" class="attractions__sort-btn">Храмы</li>
+                </ul>
+            </nav>
+             
+            <div id="attractions-list"></div>
+            <div class="attractions__all-list" id = "Attractions"></div>
+            <div id="fullscreen-overlay" class="fullscreen__overlay">
+                <span class="fullscreen__close">&times;</span>
+                <div class="fullscreen__content">
+                  <img src="" alt="" class="fullscreen__image">
+                </div>
+                <button class="fullscreen__prev">
+                    <img src="assest\image\Vectorl.svg" alt="стрелачка">
+                </button>
+                <button class="fullscreen__next">
+                    <img class="fullscreen__next-right" src="assest\image\Vectorl.svg" alt="стрелачка">
+                </button>
+            </div>
+            <nav class="attractions__pagination"> 
+                <ul class="attractions__pagin" id = "attractions__pagin">
+                    <a data-f = "1" href="#" class="attractions__pagin-btn animate-left">1</a> 
+                    <a data-f = "2" href="#" class="attractions__pagin-btn animate-down">2</a> 
+                    <a data-f = "3" href="#" class="attractions__pagin-btn animate-right">3</a> 
+                </ul>
+            </nav> 
+        </div>
+    </section>
+    <section class="footer" id = "footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__logo">
+                    <img src="./assest/image/logo 1.svg" alt="">
+                </div>
+                <div class="footer__link">
+                    <a href="index.html" class="footer__link-t">Главная</a>
+                    <a href="Attractions.html" class="footer__link-t">Достопримечательности</a>
+                    <a href="index.html" class="footer__link-t">Карты</a>
+                    <a href="contacts.html" class="footer__link-t">Контакты</a>
+                    <a href="#" class="footer__link-t">FAQ</a>
+                </div>
+                <div class="footer__image">
+                    <a href="">
+                        <img class="footer__image-t" src="./assest/image/mail_ru_black_logo_icon_147112.svg" alt="">
+                    </a>
+                    <a href="https://t.me/+_3mwCE9e_DE1Yjgy">
+                        <img class="footer__image-t" src="./assest/image/telegram_black_logo_icon_147073 (1).svg" alt="">
+                    </a>
+                    <a href="https://vk.com/id823204414">
+                        <img class="footer__image-t" src="./assest/image/vk_black_logo_icon_147058.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__link">
+                <p class="footer__link-t">
+                    Политика конфиденциальности
+                </p>
+                <p class="footer__link-t">
+                    ©️ 2024 2rism
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="loader" id = "loader">
+        <div class="loader__row">
+          <div class="loader__item"></div>
+        </div>
+    </div>
+    <script src = "./assest/js/script_black.js"></script>
+    <script src = "assest/js/script_animated.js" ></script>
+    <script src = "assest/js/attractionList.js" ></script>
+    <script src = "assest/js/test.js" ></script>
+    <script src = "./assest/js/loader.js"></script>
+    <script src = "./assest/js/script_sort.js" ></script>
+    <script src = "./assest/js/script_pagin.js" ></script>
+</body>
+</html>

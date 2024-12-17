@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <title>Путеводитель по городу</title>
+</head>
+
+<body id = "body">
+    <div class="main__back">
+        <header class="header" id="header">
+            <div class="container" id = "line">
+                <div class="header__wrap">
+                    <button class="header__burger-btn" id="burger">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <div class="header__image animate-left">
+                        <img src="assest\image\logo 1.svg" alt="logo">
+                    </div>
+                    <div class="header__menu animate-down">
+                        <div class="header__link">
+                            <div class="header__link_img">
+                                <img src="assest\image\newspaper.svg" alt="newspaper">
+                            </div>
+                            <div class="header__link-t">
+                                <a href="index.html" class="header__text">
+                                    Главная
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__link">
+                            <div class="header__link_img">
+                                <img src="assest/image/Component 63.svg" alt="hz">
+                            </div>
+                            <div class="header__link-t">
+                                <a href="#" class="header__text">
+                                    Достопримечательности
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__link">
+                            <div class="header__link_img">
+                                <img src="assest/image/Group.svg" alt="karta">
+                            </div>
+                            <div class="header__link-t">
+                                <a href="index.html#karta" class="header__text">
+                                    Карты
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__link">
+                            <div class="header__link_img">
+                                <img src="assest/image/icon.svg" alt="icon">
+                            </div>
+                            <div class="header__link-t">
+                                <a href="contacts.html" class="header__text">
+                                    Контакты
+                                </a>
+                            </div>
+                        </div>
+                        <form class="search">
+                            <div class="icon"></div>
+                            <div class="input">
+                                <input type="text" placeholder="Поиск" id="searchbar" name="search" onkeyup="search_attraction()">
+                            </div>
+                            <ul id="input"></ul>
+                            <span class="clear"></span>
+                        </form>
+                        <form class="header__switch" id="returnBlack">
+                            <img class="header__switch-img" src="./assest/image/result_3dac58864881d859b7da50510e9daa13-no-bg-preview (carve.photos).png" width="40" alt="" id = 'sun'>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="container">
+                <div class="main__content">
+                    <div class="main__title">
+                        <h1 class="main__title-t animate-left">
+                            Добро пожаловать в наш раздел, <br>
+                            посвященный удивительным <br>
+                            достопримечательностям! Здесь<br>
+                            вы найдете все необходимое для <br>
+                            планирования незабываемого <br>
+                            путешествия по самым интересным<br>
+                            местам наших регионов.
+                        </h1>
+                    </div>
+                    <div class="main__btn animate-up">
+                        <a href="#attractions" class="main__btn-t">
+                            Узнать больше ⮕
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <ul>
+        <li>
+            <section class="attractions" id="attractions">
+                <div class="container2">
+                    <div class="attractions__title">
+                        <h1 class="attractions__title-t animate-left"> 
+                            Достопримечательности Москвы
+                        </h1>
+                    </div>
+                    <div class="attractions__full-slider">
+                        <button class="attractions__left animate-left">
+                            <img src="assest\image\Vectorl.svg" alt="стрелочка">
+                        </button>
+                        <div class="attractions__slider">
+                            <div class="attractions__slider-line">
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-100">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="/assest/image/загруженное 1.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Храм Василия Блаженного
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Красная площадь, 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-1">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-1">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Храм Василия Блаженного_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Храм Василия Блаженного
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Храм Василия Блаженного (Покровский
+                                                собор) — православный храм на Красной
+                                                площади в Москве, один из самых
+                                                популярных культурных символов России. 
+                                                Архитектурный ансамбль храма представляет
+                                                собой чёткую геометрическую структуру в
+                                                виде восьмиконечной звезды — ромба,
+                                                вписанного в квадрат. На едином подклете-
+                                                основании расположены девять отдельных
+                                                храмов.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list1" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-200">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/redmsc.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Красная площадь
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Красная площадь
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-2">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-2">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Красная площадь_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Красная площадь
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Красная площадь — главная площадь Москвы и России, расположена между
+                                                Московским Кремлём (к западу) и Китай-городом (на восток). 12 Выходит к
+                                                берегу Москвы-реки через пологий Васильевский спуск.
+                                                Общая длина Красной площади — 330 метров, ширина — 75 метров, площадь —
+                                                24 750 м². 
+                                                На площади расположены: Лобное место, памятник Минину и Пожарскому,
+                                                Мавзолей Владимира Ленина, некрополь у Кремлёвской стены. В северной
+                                                части площади находятся Исторический музей и Казанский собор, в южной —
+                                                Покровский собор
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list2" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-300">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/kreml.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Кремль
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Красная площадь, 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-3">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-3">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Кремль_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Кремль
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Кремль — это древнейшая часть Москвы, главный
+                                                общественно-политический и историко-
+                                                художественный комплекс города, официальная
+                                                резиденция Президента Российской Федерации. 
+                                                В плане Кремль представляет собой неправильный
+                                                треугольник площадью 27,5 гектара. Южная стена
+                                                обращена к Москве-реке, северо-западная — к
+                                                Александровскому саду, восточная — к Красной
+                                                площади. 
+                                                На территории Кремля расположено 20 башен, из
+                                                которых круглое сечение имеют 3 башни в углах
+                                                треугольника. В архитектурный ансамбль входят 8
+                                                соборов, среди которых наибольшее значение имеет
+                                                Успенский собор.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list3" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-400">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/museum_msc.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Исторический музей
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Красная площадь, 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-4">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-4">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Исторический музей_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Исторический музей
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Государственный исторический музей в
+                                                Москве
+                                                – первый в России, крупнейший в СССР и РФ
+                                                музей национальной истории и культуры. В
+                                                нем хранятся бесценные памятники
+                                                археологии, нумизматики, древнерусской
+                                                живописи и книжности, оружие,
+                                                произведения изобразительного и
+                                                декоративно-прикладного искусства.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list4" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-500">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/mavsolei.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Мавзолей
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Красная площадь
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-5">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-5">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Мавзолей_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Мавзолей
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Мавзолей Ленина — мемориальное
+                                                сооружение, возведённое в Москве на Красной
+                                                площади в 1924 году.
+                                                Это монументальный памятник-усыпальница,
+                                                возведённый по проекту архитектора Алексея
+                                                Щусева. Он стал символом советской власти и
+                                                сакральным местом поклонения для
+                                                множества людей.
+                                                Внутри сооружения находится стеклянный
+                                                саркофаг с телом Владимира Ленина.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list5" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-600">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/храммск.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Храм Христа Спасителя
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    ул. Волхонка, 15
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-6">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-6">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Храм Христа Спасителя_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Храм Христа Спасителя
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Храм Христа Спасителя — кафедральный собор
+                                                Русской православной церкви, расположенный
+                                                в центральной части Москвы на улице
+                                                Волхонке.
+                                                  Храм имеет статус патриаршего подворья и
+                                                является коллективным кенотафом воинов
+                                                Русской императорской армии, погибших
+                                                в войне с Наполеоном. На стенах храма
+                                                начертаны имена офицеров, павших в войне и
+                                                Заграничных походах 1797–1806 и 1813–1814 годов
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list6" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-700">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Большой театр.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Большой театр
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Театральная площадь, 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-7">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-7">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Большой театр Блаженного_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Большой театр
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Большой театр в Москве — это центр российской и
+                                                мировой музыкальной культуры, один из главных
+                                                символов отечественной культуры. Его музей и
+                                                историческое здание — объект культурного
+                                                наследия народов России федерального значения. 
+                                                Фасад театра поддерживается элегантными
+                                                колоннами в неоклассическом стиле, а по фронтону
+                                                с замысловатой резьбой галопом скачет четверка
+                                                лошадей. Над портиком находится колесница бога
+                                                Аполлона, которая стала узнаваемым украшением и
+                                                символом Большого театра.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list7" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-800">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Третьяковская галерея.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Третьяковская галерея
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    Лаврушинский пер., 10, стр. 4
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-8">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-8">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Третьяковская галерея_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Третьяковская галерея
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Государственная Третьяковская галерея 
+                                                — художественная галерея в Москве, Россия,
+                                                которая считается ведущим хранилищем
+                                                русского изобразительного искусства в мире.
+                                                Фасад здания галереи был спроектирован
+                                                художником Виктором Васнецовым в
+                                                своеобразном стиле русской сказки. Здание
+                                                было построено в 1902–1904 годах к югу от
+                                                Московского Кремля.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list8" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-900">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Воробьевы горы.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Воробьевы горы
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    ул. Косыгина
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-9">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-9">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Воробьевы горы_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Воробьевы горы
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Воробьёвы горы — это местность на юго-
+                                                западе Москвы, представляющая собой
+                                                высокий правый берег в излучине Москвы-
+                                                реки, покрытый лесопарком.
+                                                Горы расположены напротив Лужников и
+                                                считаются одним из «семи холмов Москвы».
+                                                Они протягиваются от устья реки Сетуни до
+                                                Андреевского моста Малого кольца
+                                                Московской железной дороги. На востоке
+                                                граничат с Нескучным садом.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list9" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list attractions__list-low">
+                                    <button href="#" class="attractions-link__list" id="open-msc-1000">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Парк Горького.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions__text">
+                                            Парк Горького
+                                        </p>
+                                        <div class="attractions__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions__local">
+                                                <p class="attractions__local-t">
+                                                    ул. Крымский Вал, 9
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-10">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-10">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Парк Горького_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Парк Горького
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Парк Горького — главный парк страны, точка
+                                                культурного притяжения в самом центре
+                                                Москвы площадью 250 га. 
+                                                Открылся в 1928 году на месте первой
+                                                Всероссийской сельскохозяйственной
+                                                выставки (ВСХВ). 2 Стал первым в мире
+                                                массовым парком культуры и отдыха. На его
+                                                базе создавался уникальный проект —
+                                                «комбинат культуры». 
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list10" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="attractions__right animate-right">
+                            <img src="assest\image\Vector.svg" alt="стрелочка">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="attractions" id="attractions_kazan">
+                <div class="container2">
+                    <div class="attractions_kazan__title">
+                        <h1 class="attractions_kazan__title-t animate-right">
+                            Достопримечательности Казани
+                        </h1>
+                    </div>
+                    <div class="attractions_kazan__full-slider">
+                        <button class="attractions_kazan__left animate-left">
+                            <img src="assest\image\Vectorl.svg" alt="стрелочка">
+                        </button>
+                        <div class="attractions_kazan__slider">
+                            <div class="attractions_kazan__slider-line">
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1100">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/башня.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Башня Сююмбике
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Кремль, 17 (у Президентского дворца)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-11">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-11">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Башня Сююмбике_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Башня Сююмбике
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Башня Сююмбике — семиярусная башня из
+                                                красного кирпича на территории Казанского
+                                                кремля.
+                                                Описание строения:
+                                                Состоит из последовательно уменьшающихся
+                                                многоугольных ярусов геометрической формы.
+                                                Три нижних четверика и четыре верхних
+                                                восьмерика увенчаны изящным ребристым
+                                                шатровым шпилем.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list11" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1200">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Национальный музей Республики Татарстан.svg"
+                                                alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text attractions_kazan__text-small">
+                                            Национальный музей Республики Татарстан
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    ул. Кремлёвская, 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-12">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-12">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Национальный музей Республики Татарстан_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Национальный музей Республики Татарстан
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Национальный музей Республики Татарстан — это крупнейшее в республике
+                                                научно-исследовательское учреждение, имеющее общенациональное значение.
+                                                Музей был открыт в 1895 году и тогда назывался Казанским городским
+                                                научно-промышленным музеем. Музей занимает здание бывшего Гостиного
+                                                двора, которое является памятником архитектуры и истории РФ и Республики
+                                                Татарстан. С тех пор менялось не только название, но и пополнялась
+                                                богатая коллекция музея.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list12" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1300">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Улица Баумана.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Улица Баумана
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Улица Баумана
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-13">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-13">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Улица Баумана_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Улица Баумана
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Улица Баумана — главная и частично пешеходная улица в Казани,
+                                                расположенная в историческом центре города, в Вахитовском районе.
+                                                Начинается около Казанского кремля от площади Тысячелетия и продолжается
+                                                на юго-восток, пересекая улицы Чернышевского, Мусы Джалиля, Кави Наджми,
+                                                Астрономическая, Университетская, и заканчивается на площади Тукая, где
+                                                пересекается с улицей Пушкина
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list13" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1400">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Пушечный двор.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Пушечный двор
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Кремль, 14, 16
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-14">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-14">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Пушечный двор_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Пушечный двор
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Пушечный двор представлял собой мануфактуру, с плавильными печами,
+                                                кузницами, литейными амбарами.
+                                                В техническом отношении пушечный двор был одним из передовых предприятий
+                                                17 века. На московском пушечном дворе отливались пушки, колокола и
+                                                другие нужные металлические изделия. Самым крупным пушкам, изготовленным
+                                                на пушечном дворе, давали грозные имена – «Лев», «Сокол», «Волк»,
+                                                «Единорог».
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list14" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1500">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Губернаторский (президентский) дворец.svg"
+                                                alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text attractions_kazan__text-small">
+                                            Губернаторский (президентский) дворец
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Кремль, 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-15">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-15">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Губернаторский (президентский) дворец_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Губернаторский (президентский) дворец
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Губернаторский (президентский) дворец в Казани — резиденция главы
+                                                Татарстана. Здание расположено в Казанском Кремле, напротив
+                                                Благовещенского собора, рядом с Музеем государственности Татарстана и
+                                                башней Сююмбике.
+                                                Дворец построен в псевдовизантийском стиле, для которого характерна
+                                                чёткая симметрия. В здании есть антресольный и подвальный этажи. Главный
+                                                фасад имеет два входа. Здание представляет собой полукруг, во внутренний
+                                                двор можно заехать через большую арку.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list15" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1600">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Кремлёвская набережная.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Кремлёвская набережная
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    ул. Федосеевская, 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-16">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-16">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Кремлёвская набережная_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Кремлёвская набережная
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Кремлёвская набережная — пешеходная набережная реки Казанка в центре
+                                                города Казань.
+                                                Имеет длину около полутора километров и пролегает от стен Казанского
+                                                Кремля до Национального культурного центра «Казань».
+                                                Является одной из современных городских достопримечательностей и одним
+                                                из мест массового посещения в городе.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list16" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1700">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Центр семьи «Казан».svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Центр семьи «Казан»
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Сибгата Хакима, 4
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-17">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-17">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Центр семьи «Казан»_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Центр семьи «Казан»
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Центр семьи «Казан»  — главный дворец бракосочетаний. дание имеет
+                                                оригинальную архитектуру и напоминает казан, традиционный азиатский
+                                                литой котёл над пылающим огнём. 1 Верхняя часть выполнена из меди в
+                                                форме казана, который символизирует тепло домашнего очага, семейные узы,
+                                                достаток. По ободу медного казана проложен орнамент из мифических
+                                                зилантов, или «казанских драконов», с которыми легенды связывают
+                                                основание города. Чашу поддерживают арки в виде языков пламени. Вечером
+                                                казан подсвечивают красным цветом, создавая иллюзию огня
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list17" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1800">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Благовещенский собор.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Благовещенский собор
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Кремль, недалеко от архиерейского дома
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-18">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-18">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Благовещенский собор_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Благовещенский собор
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Благовещенский собор Московского Кремля — памятник древнерусской
+                                                архитектуры и живописи, бывший великокняжеский и царский домовый храм.
+                                                Первоначально имел три главы — центральную и две над восточными углами
+                                                храма. Во второй половине XVI века на сводах галерей были устроены
+                                                четыре придела со своими главами и добавлены ещё две главы на основном
+                                                объёме. В итоге собор стал девятиглавым и приобрёл пирамидальное
+                                                завершение от глав приделов до центральной главы
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list18" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-1900">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Театр кукол «Экият».svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Театр кукол «Экият»
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    ул. Петербургская, 57
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-19">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-19">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Театр кукол «Экият»_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Театр кукол «Экият»
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Татарский государственный театр кукол «Экият» - это один из старейших
+                                                театров кукол России. Был открыт в 1934 году и работает на русском и
+                                                татарском языках. Театр кукол «Әкият» стремится работать под девизом:
+                                                «Современный театр - для всей семьи». Здесь с успехом ставятся спектакли
+                                                для детей, подростков и их родителей.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list19" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_kazan__list">
+                                    <button href="#" class="attractions-link_kazan__list" id="open-msc-2000">
+                                        <div class="attractions_kazan__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Мечеть Кул-Шариф.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_kazan__text">
+                                            Мечеть Кул-Шариф
+                                        </p>
+                                        <div class="attractions_kazan__wrap">
+                                            <div class="attractions_kazan__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_kazan__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Кремль, 13 (рядом c галереей «Хазинэ»)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-20">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-20">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Мечеть Кул-Шариф_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Мечеть Кул-Шариф
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Мечеть «Кул-Шариф» — главная джума-мечеть республики Татарстан и города
+                                                Казани, расположенная на территории Казанского кремля. Одна из главных
+                                                достопримечательностей города.
+                                                Комплекс мечети представляет собой композицию из главного здания (с
+                                                шестью минаретами и двумя пристроенными по бокам полупавильонами) и
+                                                отдельно стоящего двухэтажного административно-хозяйственно-пожарного
+                                                павильона, выполненного в такой же стилистике. 
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list20" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="attractions_kazan__right animate-right">
+                            <img src="assest\image\Vector.svg" alt="стрелочка">
+                        </button>
+                    </div>
+            </section>
+        </li>
+        <li>
+            <section class="attractions_piter" id="attractions">
+                <div class="container2">
+                    <div class="attractions_piter__title">
+                        <h1 class="attractions_piter__title-t animate-left">
+                            Достопримечательности Санкт-Петербурга
+                        </h1>
+                    </div>
+                    <div class="attractions_piter__full-slider">
+                        <button class="attractions_piter__left animate-left">
+                            <img src="assest\image\Vectorl.svg" alt="стрелочка">
+                        </button>
+                        <div class="attractions_piter__slider">
+                            <div class="attractions_piter__slider-line">
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2100">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Невский проспект.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Невский проспект
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    Невский проспект
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-21">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-21">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Невский проспект_modal.svg "
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Невский проспект
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Не́вский проспе́кт — главная улица Санкт-Петербурга, протянувшаяся на
+                                                4,5 км от Адмиралтейства до Александро-Невской лавры. Пересекает Мойку,
+                                                канал Грибоедова и Фонтанку. Наибольшая ширина составляет 60 м,
+                                                наименьшая — 25 м. Нечётная сторона неофициально называется «теневой»,
+                                                чётная — «солнечной»
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list21" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2200">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Русский музей.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Русский музей
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    ул. Инженерная, 2-4
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-22">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-22">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Русский музей_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Русский музей
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Русский музей — первый в стране государственный музей русского
+                                                изобразительного искусства, коллекция которого насчитывает 400 000
+                                                экспонатов и представляет историю культуры более чем за тысячу лет.
+                                                Основанный в 1895 году по Указу императора Николая II, сегодня Русский
+                                                музей представляет собой огромный комплекс.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list22" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2300">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Петропавловская крепость.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Петропавловская крепость
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    Петропавловская крепость, д. 3
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-23">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-23">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Петропавловская крепость_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Петропавловская крепость
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Петропавловская крепость расположена на Заячьем острове. В плане она
+                                                имеет вид неправильного шестиугольника, вытянутого с запада на восток.
+                                                Шесть выступающих углов – это пятигранные по форме бастионы. Вначале
+                                                бастионы были земляными, затем - кирпичными и только в конце XVIII века
+                                                они были построены в камне.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list23" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2400">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Храм Спаса на Крови.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Храм Спаса на Крови
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    наб. канала Грибоедова, 2Б
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-24">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-24">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Храм Спаса на Крови_modal.svg"
+                                                alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Храм Спаса на Крови
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Спас-на-крови — один из самых известных мемориальных православных храмов
+                                                в городе Санкт-Петербурге, возведенный во имя Воскресения Христова. Он
+                                                был сооружен в память того, что на его месте 1 марта 1881 года был
+                                                смертельно ранен император Александр II в результате покушения.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list24" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2500">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Эрмитаж.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Эрмитаж
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_kazan__local-t">
+                                                    Дворцовая набережная, 34
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-25">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-25">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Эрмитаж__modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Эрмитаж
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Эрмитаж — российский государственный художественный и
+                                                культурно-исторический музей в Санкт-Петербурге, одно из крупнейших в
+                                                мире учреждений подобного рода.
+                                                Возник в 1764 году как частная коллекция произведений искусства,
+                                                приобретавшихся в частном порядке российской императрицей Екатериной II.
+                                                Первоначально это собрание размещалось в главной императорской
+                                                резиденции в специальном дворцовом флигеле — Эрмитаже (в современном
+                                                комплексе — Малый Эрмитаж).
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list25" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2600">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Мариинский театр.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Мариинский театр
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    Театральная пл., 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-26">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-26">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Мариинский театр_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Мариинский театр
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Мариинский театр — театр оперы и балета в Санкт-Петербурге, один из
+                                                ведущих музыкальных театров России и мира.
+                                                Здание театра, построенное в 1860 году, считается одним из красивейших
+                                                не только в России, но и во всём мире. Зрительный зал считается одним из
+                                                самых красивых в мире. Необычен цвет его оформления — цвет морской
+                                                волны: голубые стены, синий бархат и синие кресла. Занавес создан в 1914
+                                                году по рисункам выдающегося театрального художника Александра Головина
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list26" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2700">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Летний сад.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Летний сад
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    наб. Кутузова, 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-27">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-27">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Летний сад_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Летний сад
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Ле́тний сад — парковый ансамбль, памятник садово-паркового искусства
+                                                первой трети XVIII века в Центральном районе Санкт-Петербурга. Сад был
+                                                заложен по повелению Петра I в 1704 году и первоначально был регулярным.
+                                                Занимает отдельный одноимённый остров, омываемый реками Невой,
+                                                Фонтанкой, Мойкой и Лебяжьей канавкой.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list27" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2800">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Казанский собор.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Казанский собор
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    Казанская пл., 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-28">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-28">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Казанский собор_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Казанский собор
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Музей российского природного камня – такое название закрепилось за
+                                                Казанским собором не просто так. Главный материал – известковый туф –
+                                                добывали в районе Гатчины. Так называемый пудостский камень напоминает
+                                                итальянский травертино, который использовался при строительстве собора
+                                                Святого Петра.
+                                                Стиль, в котором выполнен собор, однозначно не определяют. Самая
+                                                расхожая теория относит его к ампиру, хотя некоторые исследователи
+                                                настаивают на классицизме, но не греческом, а итальянском.
+                                            </p>
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list28" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-2900">
+                                        <div class="attractions__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/Кунсткамера.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Кунсткамера
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    Университетская наб., 3
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="modal" id="modal-msc-29">
+                                    <div class="modal-window">
+                                        <button class="modal-close" id="close_modal-29">
+                                            <img src="./assest/image/крестик.svg" alt="">
+                                        </button>
+                                        <div class="modal-image">
+                                            <img src="./assest/image/Кунсткамера_modal.svg" alt="attraction_modal">
+                                        </div>
+                                        <div class="modal-title">
+                                            <h1 class="modal-title-text">
+                                                Кунсткамера
+                                            </h1>
+                                        </div>
+                                        <div class="modal-text">
+                                            <p class="modal-text-text">
+                                                Кунсткамера — это старейший музей России, основанный в 1714 году на базе
+                                                личных коллекций Петра I, приобретенных им во время путешествий в
+                                                Западную Европу. Первоначально они размещались в Летнем дворце Петра I,
+                                                в специальном помещении, названном «Кунсткамера», что переводится с
+                                                немецкого как «кабинет редкостей».
+                                        </div>
+                                        <div class="modal-btn">
+                                            <a href="all_attraction.html#list29" class="modal-btn-t">
+                                                Узнать больше ⮕
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions__list-low attractions_piter__list">
+                                    <button href="#" class="attractions-link_piter__list" id="open-msc-3000">
+                                        <div class="attractions_piter__image-low">
+                                            <img class="attractions__image-low" src="./assest/image/ Исаакиевский собор.svg" alt="attraction">
+                                        </div>
+                                        <p class="attractions_piter__text">
+                                            Исаакиевский собор
+                                        </p>
+                                        <div class="attractions_piter__wrap">
+                                            <div class="attractions_piter__img">
+                                                <img src="./assest/image/map-pin-line.svg" alt="local">
+                                            </div>
+                                            <div class="attractions_piter__local">
+                                                <p class="attractions_piter__local-t">
+                                                    Исаакиевская пл., 4
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-msc-30">
+                            <div class="modal-window">
+                                <button class="modal-close" id="close_modal-30">
+                                    <img src="./assest/image/крестик.svg" alt="">
+                                </button>
+                                <div class="modal-image">
+                                    <img src="./assest/image/ Исаакиевский собор_modal.svg" alt="attraction_modal">
+                                </div>
+                                <div class="modal-title">
+                                    <h1 class="modal-title-text">
+                                        Исаакиевский собор
+                                    </h1>
+                                </div>
+                                <div class="modal-text">
+                                    <p class="modal-text-text">
+                                        Исаакиевский собор — крупнейший православный храм города Санкт-Петербурга,
+                                        которому присвоен статус музея.
+                                        Он располагается на знаменитой Исаакиевской площади. Освящён во имя преподобного
+                                        Исаакия Далматского, которого почитал Пётр I.
+                                        Собор был построен в период с 1818 по 1858 годы. Над созданием проекта работал
+                                        архитектор Огюст Монферран. Строительство проводилось под руководством
+                                        императора Николая I
+                                    </p>
+                                </div>
+                                <div class="modal-btn">
+                                    <a href="all_attraction.html#list30" class="modal-btn-t">
+                                        Узнать больше ⮕
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="attractions_piter__right animate-right">
+                            <img src="assest\image\Vector.svg" alt="стрелочка">
+                        </button>
+                    </div>
+                    <div class="attractions__btnall animate-up">
+                        <a href="all_attraction.html" class="attractions__btnall-btn">
+                            Посмотреть все
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </li>
+    </ul>
+    <section class="revievs">
+        <div class="container">
+            <div class="revievs__title">
+                <h1 class="revievs__title-text">
+                    Оставьте свой отзыв
+                </h1>
+            </div>
+            <div class="revievs__wrap">
+                <form action="" id="revievsForm">
+                    <div class="revievs__forms animate-left">
+                        <div class="revievs__forms-wrap">
+                            <div class="revievs__forms-left">
+                                <p class="revievs__text">
+                                    Имя
+                                </p>    
+                                <div class="revievs__input-name">
+                                    <input class = "revievs__input" type="text" placeholder="Введите имя" id="inputName">
+                                </div>
+                            </div>
+                            <div class="revievs__forms-right">
+                                <p class="revievs__text">
+                                    E-mail адрес
+                                </p>    
+                                <div class="revievs__input-email">
+                                    <input class = "revievs__input" type="text" placeholder="Введите E-mail адрес" id="inputEmail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revievs__rate">
+                            <p class="revievs__rate-text">
+                                Ваша оценка 
+                            </p>
+                            <div class="revievs__star">
+                                <img class="revievs__star-one" src="./assest/image/startNoYelloy.svg" alt="star" id="star1" width="42px">
+                                <img class="revievs__star-one" src="./assest/image/startNoYelloy.svg" alt="star" id="star2" width="42px">
+                                <img class="revievs__star-one" src="./assest/image/startNoYelloy.svg" alt="star" id="star3" width="42px">
+                                <img class="revievs__star-one" src="./assest/image/startNoYelloy.svg" alt="star" id="star4" width="42px">
+                                <img class="revievs__star-one" src="./assest/image/startNoYelloy.svg" alt="star" id="star5" width="42px">
+                            </div>
+                        </div>
+                        <div class="revievs__reviev">
+                            <p class="revievs__reviev-text">
+                                Оставьте отзыв
+                            </p>
+                            <div class="revievs__reviev-input">
+                                <textarea class="revievs__reviev-textarea" name="revievs" id="inputText" placeholder="Введите свой отзыв"></textarea>
+                            </div>
+                        </div>
+                        <div class="revievs__box">
+                            <input class="revievs__checkbox" type="checkbox" id="inputCheckbox">
+                            <p class="revievs__box-text">
+                                Я прочитал и принимаю Политику конфиденциальности
+                            </p>
+                        </div>
+                        <div class="revievs__sumbit">
+                            <button class="revievs__sumbit-text" type="sumbit">Отправить отзыв</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="revievs__revievs" id="revievs"></div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id = "footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__logo">
+                    <img src="./assest/image/logo 1.svg" alt="">
+                </div>
+                <div class="footer__link">
+                    <a href="#" class="footer__link-t">Главная</a>
+                    <a href="#" class="footer__link-t">Достопримечательности</a>
+                    <a href="#" class="footer__link-t">Карты</a>
+                    <a href="#" class="footer__link-t">Контакты</a>
+                    <a href="#" class="footer__link-t">FAQ</a>
+                </div>
+                <div class="footer__image">
+                    <a href="#">
+                        <img class="footer__image-t" src="./assest/image/mail_ru_black_logo_icon_147112.svg" alt="">
+                    </a>
+                    <a href="https://t.me/+_3mwCE9e_DE1Yjgy">
+                        <img class="footer__image-t" src="./assest/image/telegram_black_logo_icon_147073 (1).svg" alt="">
+                    </a>
+                    <a href="https://vk.com/id823204414">
+                        <img class="footer__image-t" src="./assest/image/vk_black_logo_icon_147058.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__link">
+                <p class="footer__link-t" id="returnBlack">
+                    Политика конфиденциальности
+                </p>
+                <p class="footer__link-t" id="removeBlack">
+                    ©️ 2024 2rism
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="loader" id = "loader">
+        <div class="loader__row">
+          <div class="loader__item"></div>
+        </div>
+    </div>
+    <script src="./assest/js/script_burger.js"></script>
+    <script src = "./assest/js/script_black.js"></script>
+    <script src="./assest/js/script_2.js"></script>
+    <script src="./assest/js/script_animated.js"></script>
+    <script src="./assest/js/seach_animate.js"></script>
+    <script src="./assest/js/script_search-poisk.js"></script>
+    <script src="./assest/js/revievs.js"></script>
+    <script src = "./assest/js/loader.js"></script>
+    <script src="./assest/js/script_modal.js"></script>
+</body>
+</html>

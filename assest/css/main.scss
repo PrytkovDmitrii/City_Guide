@@ -1,0 +1,1018 @@
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Bold.ttf");
+    width: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Medium.ttf");
+    width: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+    width: 600px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 20px;
+    width: 600;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    cursor: url("../image/位置选择.cur"), auto;
+}
+body.black {
+    background: #2c2c2c;
+    color: #fff;
+    input{
+        color: #fff;
+    }
+    .loader{
+        background: #2c2c2c;
+        &__item {
+            border-color: #ff814b transparent;
+        }
+    }
+    .header{
+        &__menu{
+            background: #535353;
+        }
+        &__text{
+            color: #fff;
+        }
+        &__link_img{
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        }
+    }
+    .main{
+        &__btn{
+            &-t{
+                color: #fff;
+                background-color: #ff814b;
+            }
+            &-t:hover{
+                color: #ff814b;
+                background-color: #fff;
+                border: 1px solid #ff814b;
+            }
+        }
+    }
+    .catalog{
+        &__slider{
+            &-btn{
+                background-color: #ff814b;
+                color: #fff;
+            }
+            &-btn:hover{
+                color: #ff814b;
+                background-color: #fff;
+            }
+        }
+    }
+    .moscow {
+        &__btn{
+            &-t{
+                color: #fff;
+                background-color: #ff814b;
+            }
+            &-t:hover{
+                color: #ff814b;
+                background-color: #fff;
+                border: 1px solid #ff814b;
+            }
+        }
+        &__title{
+            &-t{
+                color: #fff;
+            }
+        }
+        &__text{
+            &-t{
+                color: #FFF;
+            }
+        }
+    }
+    .piter {
+        &__btn{
+            &-t{
+                color: #fff;
+                background-color: #ff814b;
+            }
+            &-t:hover{
+                color: #ff814b;
+                background-color: #fff;
+                border: 1px solid #ff814b;
+            }
+        }
+        &__title{
+            &-t{
+                color: #fff;
+            }
+        }
+        &__text{
+            &-t{
+                color: #FFF;
+            }
+        }
+    }
+    .kazan {
+        &__btn{
+            &-t{
+                color: #fff;
+                background-color: #ff814b;
+            }
+            &-t:hover{
+                color: #ff814b;
+                background-color: #fff;
+                border: 1px solid #ff814b;
+            }
+        }
+        &__title{
+            &-t{
+                color: #fff;
+            }
+        }
+        &__text{
+            &-t{
+                color: #FFF;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1486px;
+    margin: 0 auto;
+}
+
+.container_2{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__burger-btn{
+        display: none;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin-top: 70px;
+        border-radius: 10px;
+        background-color: #7B61FF;
+        z-index: 5;
+    }
+    &__burger-btn span{
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: #fff;
+        left: 10px;
+        z-index: 5;
+        transition: transform 0.6s, opacity 0.5s;
+    }
+    &__burger-btn span:nth-child(1){
+        transform: translateY(-10px);
+    }
+    &__burger-btn span:nth-child(3){
+        transform: translateY(10px);
+    }
+    &.open &__burger-btn span:nth-child(1){
+        transform: translateY(0) rotate(-45deg);
+    }
+    &.open &__burger-btn span:nth-child(2){
+        opacity: 0;
+    }
+    &.open &__burger-btn span:nth-child(3){
+        transform: translateY(0) rotate(45deg);
+    }
+    
+    &__image{
+        margin-top: 82px;
+    }
+    &__menu{
+        z-index: 3;
+        margin-top: 55px;
+        background-color: #D9D9D9;
+        padding: 11px 60px 11px;
+        border-radius: 25px;
+        display: flex;
+        gap: 60px;
+    }
+    &__link{
+        margin-top: 20px;
+        display: flex;
+        gap: 9px;
+        &-t{
+            transition: .3s;
+        }
+        &-t:hover{
+            transform: scale(1.03);
+        }
+    }
+    &__text{
+        color: #000;
+    }
+    &__registr{
+        display: flex;
+        gap: 15px;
+    }
+    &__vhod{
+        margin-top: 87px;
+    }
+    &__vhod-t{
+        color: #000;
+        font-size: 14px;
+        transition: .3s;
+    }
+    &__vhod-t:hover{
+        font-size: 16px;
+        color: #fff;
+    }
+    &__reg{
+        margin-top: 87px;
+        &-t{
+            font-size: 14px;
+            color: #fff;
+            background-color: #000;
+            padding: 15px 24px;
+            border-radius: 8px;
+            transition: .3s;
+        }
+        &-t:hover{
+            color: #000;
+            background-color: #fff;
+            padding: 17px 26px;
+        }
+    }
+    &__switch{
+        position: relative;
+        width: 60px;
+        margin-left: -35px;
+        overflow: hidden;
+        background: #7B61FF;
+        border-radius: 12px;
+        transition: 0.5s;
+        box-shadow:  0 0 0 3px #c1c1c1;
+        cursor: pointer;
+        padding: 10px;
+    }
+    &__switch.black {
+        background: #3c3c3c;
+    }
+}
+
+.main{
+    margin-top: 234px;
+    &__back{
+        background: url("../image/Saint-Petersburg-Russia-city-night-view-tower-bridge-river_1920x1080\ 1.svg") no-repeat center center/cover;
+        height: 100%;
+        padding: 0 0 350px;
+        margin-bottom: 90px;
+    }
+    &__title{
+        margin-bottom: 80px;
+        &-t{
+            font-size: 64px;
+            width: 600px;
+            color: #fff;
+        }
+    }
+    &__btn{
+        &-t{
+            color: #fff;
+            background-color: #7B61FF;
+            padding: 20px 34px;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        &-t:hover{
+            color: #7B61FF;
+            background-color: #fff;
+            border: 1px solid #7B61FF;
+        }
+    }
+}
+
+.animate-left{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate-right{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate-up{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate-down{
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate-right.visible,
+.animate-left.visible,
+.animate-up.visible,
+.animate-down.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+.catalog{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+    &__text{
+        margin-top: 157px;
+        &-t{
+            font-size: 48px;
+        }
+    }
+    &__full-slider{
+        display: flex;
+        gap: 30px;
+    }
+    &__slider{
+        display: block;
+        width: 900px;
+        height: 600px;
+        overflow: hidden;
+        &-line{
+            height: 600px;
+            width: 2700px;
+            display: flex;
+            position: relative;
+            left: 0;
+            transition: all ease 1s;
+        }
+        &-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-t{
+            font-size: 48px;
+        }
+        &_btn{
+            position: relative;
+            top: 15px; 
+        }
+        &-btn{
+            background-color: #7B61FF;
+            padding: 20px;
+            border-radius: 20px;
+            color: #fff;
+            transition: .5s;
+        }
+        &-btn:hover{
+            color: #7B61FF;
+            background-color: #fff;
+        }
+    }
+} 
+
+
+.moscow{
+    background: url("../image/92eb8fc6-efb6-5b81-8e08-a6c19b9bb554\ 1.svg") no-repeat center center/cover;
+    background-size: 100%;
+    padding: 94px 128px 144px;
+    &__title{
+        display: flex;
+        justify-content: end;
+        &-t{
+            font-size: 64px;
+            width: 700;
+            color: #fff
+        }
+    }
+    &__text{
+        margin-bottom: 330px;
+        &-t{
+            color: #fff;
+            font-size: 32px;
+        }
+    }
+    &__btn{
+        display: flex;
+        justify-content: end;
+        &-t{
+            color: #fff;
+            background-color: #7B61FF;
+            padding: 27px 23px;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        &-t:hover{
+            color: #7B61FF;
+            background-color: #fff;
+            border: 1px solid #7B61FF;
+        }
+    }
+}
+
+.moscow__map{
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-karta{
+        display: flex;
+        align-items: center;
+    }
+    &-t{
+        font-size: 64px;
+    }
+    &-m{
+        margin-top: 64px;
+        margin-bottom: 94px;
+    }
+}
+
+.kazan{
+    background: url("../image/night-kazan\ 1.svg") no-repeat center center/cover;
+    background-size: 100%;
+    padding: 94px 128px 144px;
+    &__title{
+        display: flex;
+        justify-content: end;
+        &-t{
+            font-size: 64px;
+            width: 700;
+            color: #fff
+        }
+    }
+    &__text{
+        margin-bottom: 330px;
+        &-t{
+            color: #fff;
+            font-size: 32px;
+        }
+    }
+    &__btn{
+        &-t{
+            color: #fff;
+            background-color: #7B61FF;
+            padding: 27px 23px;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        &-t:hover{
+            color: #7B61FF;
+            background-color: #fff;
+            border: 1px solid #7B61FF;
+        }
+    }
+}
+
+.kazan__map{
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-karta{
+        display: flex;
+        align-items: center;
+    }
+    &-t{
+        font-size: 64px;
+    }
+    &-m{
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+}
+
+.piter{
+    background: url("../image/6305741532\ 1.svg") no-repeat center center/cover;
+    background-size: 100%;
+    padding: 94px 128px 144px 0px;
+    &__title{
+        display: flex;
+        justify-content: end;
+        &-t{
+            font-size: 64px;
+            width: 700;
+            color: #fff
+        }
+    }
+    &__text{
+        margin-top: 200px;
+        &-t{
+            color: #fff;
+            font-size: 32px;
+        }
+    }
+    &__btn{
+        display: flex;
+        justify-content: end;
+        &-t{
+            color: #fff;
+            background-color: #7B61FF;
+            padding: 27px 23px;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        &-t:hover{
+            color: #7B61FF;
+            background-color: #fff;
+            border: 1px solid #7B61FF;
+        }
+    }
+}
+
+.piter__map{
+    margin-top: 30px;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-karta{
+        display: flex;
+        align-items: center;
+    }
+    &-t{
+        font-size: 64px;
+    }
+    &-m{
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+}
+
+.map{
+    &-link{
+        border-radius: 30px;
+    }
+}
+
+.footer {
+    background: rgb(123,97,255);
+    background: linear-gradient(0deg, rgba(123,97,255,1) 0%, rgba(123,97,255,1) 39%, rgba(255,255,255,1) 100%);
+    height: 300px;
+    padding: 75px;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        margin-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        &-t{
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #000;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        &-t:hover{
+            transform: scale(1.05);
+            color: #fff;
+        }
+    }
+    &__image{
+        &-t{
+            margin-right: 10px;
+            transition: all 0.3s ease;
+            animation: rotate 1s linear infinite;
+        }
+        &-t:hover{
+            transform: scale(1.00);
+        }
+    }
+    &__line{
+        margin-top: 25px;
+        background-color: #000;
+        padding: 1px;
+        width: 100%;
+        transition: 0.3s;
+    }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+}
+
+.footer.black{
+    background: rgb(255,129,75);
+    background: -moz-linear-gradient(0deg, rgba(255,129,75,1) 0%, rgba(160,91,61,1) 30%, rgba(44,44,44,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,129,75,1) 0%, rgba(160,91,61,1) 30%, rgba(44,44,44,1) 100%);
+    background: linear-gradient(0deg, rgba(255,129,75,1) 0%, rgba(160,91,61,1) 30%, rgba(44,44,44,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff814b",endColorstr="#2c2c2c",GradientType=1);
+    height: 300px;
+    padding: 75px;
+}
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0e0e0;
+    z-index: 1001;
+    &__row{
+        position: relative; 
+        top: 45%; 
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        width: 75px;
+        height: 75px;
+        border: 7px solid;
+        border-color: #7B61FF transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: loader-rotate 1s linear infinite;
+    }
+    &__item:last-child {
+        top: auto;
+        bottom: 0;
+        animation-delay: -1s;
+      }  
+}
+
+@keyframes loader-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.loaded_hiding .loader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+.loaded .loader {
+    display: none;
+}
+
+
+  
+@media (max-width: 992px) {
+    .container{
+        max-width: 385px;
+        margin: 0 auto;
+    }
+    .header{
+        &__burger-btn{
+            display: block;
+        }
+        &__menu{
+            position: absolute;
+            left: -350px;
+            top: 0;
+            width: 350px;
+            padding: 75px 20px 20px 20px;
+            display: block;
+            transition: transform 0.5s;
+        }
+        &__link_img{
+            display: none;
+        }
+        &__link{
+            display: block;
+        }
+        &__switch{
+            position: relative;
+            top: -235px;
+            margin-left: 245px;
+        }
+    }
+    .header.open .header__menu{
+        transform: translateX(100%);
+        height: 270px;
+    }
+    .main{
+        margin-top: 100px;
+        &__back{
+            min-width: 425px;
+            padding: 0 0 175px;
+        }
+        &__title{
+            margin-bottom: 50px;
+            &-t{
+                font-size: 32px;
+            }
+        }
+        &__btn{
+            &-t{
+                font-size: 16px;
+                color: #fff;
+                background-color: #7B61FF;
+                padding: 15px 28px;
+                border-radius: 20px;
+            }
+        }
+        
+    }
+    .catalog{
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        &__text{
+            margin-top: 0;
+            margin-bottom: 30px;
+            &-t{
+                font-size: 32px;
+            }
+        }
+        &__left{
+            position: relative;
+            top: -200px;
+            scale: 0.4;
+        }
+        &__right{
+            position: relative;
+            top: -200px;
+            scale: 0.4;
+        }
+        &__slider-list{
+            width: 310px;
+            height: auto;
+        }
+        &__full-slider{
+            gap: 5px;
+        }
+        &__slider{
+           &-content{
+            display: flex;
+            flex-direction: column;
+            } 
+            &-t{
+                font-size: 32px;
+            }
+            &-btn{
+                font-size: 14px;
+                background-color: #7B61FF;
+                padding: 5px;
+                border-radius: 10px;
+                color: #fff;
+                transition: .5s;
+            }
+        }  
+    }
+    .moscow{
+        position: relative;
+        top: -400px;
+        width: 425px;
+        &__title{
+            display: flex;
+            justify-content: center;
+            &-t{
+                font-size: 32px;
+                width: 700;
+                color: #000
+            }
+        }
+        &__text{
+            position: relative;
+            top: 250px;
+            left: -90px;
+            margin-bottom: 30px;
+            width: 385px;
+            &-t{
+                color: #000;
+                font-size: 14px;
+            }
+        }
+        &__btn{
+            position: relative;
+            top: 240px;
+            display: flex;
+            justify-content: center;
+            &-t{
+                font-size: 12px;
+                color: #fff;
+                background-color: #7B61FF;
+                padding: 17px 20px;
+                border-radius: 15px;
+                transition: .5s;
+            }
+        }
+    }
+
+    .moscow__map{
+        position: relative;
+        top: -220px;
+        &-wrap{
+            display: flex;
+            flex-direction: column;
+        }
+        &-karta{
+            justify-content: center;
+        }
+        &-t{
+            font-size: 30px;
+        }
+        &-m{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .kazan{
+        position: relative;
+        top: -300px;
+        width: 425px;
+        &__title{
+            display: flex;
+            justify-content: center;
+            &-t{
+                font-size: 32px;
+                width: 700;
+                color: #000
+            }
+        }
+        &__text{
+            position: relative;
+            top: 260px;
+            left: -70px;
+            margin-bottom: 30px;
+            width: 385px;
+            &-t{
+                color: #000;
+                font-size: 14px;
+            }
+        }
+        &__btn{
+            position: relative;
+            top: 260px;
+            display: flex;
+            justify-content: center;
+            &-t{
+                font-size: 12px;
+                color: #fff;
+                background-color: #7B61FF;
+                padding: 17px 20px;
+                border-radius: 15px;
+                transition: .5s;
+            }
+        }
+    }
+
+    .kazan__map{
+        top: -150px;
+        position: relative;
+        &-wrap{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &-karta{
+            justify-content: center;
+        }
+        &-t{
+            font-size: 30px;
+        }
+        &-m{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .piter{
+        position: relative;
+        top: -300px;
+        width: 425px;
+        &__title{
+            position: relative;
+            top: 100px;
+            width: 425px;
+            display: flex;
+            justify-content: center;
+            &-t{
+                font-size: 32px;
+                width: 700;
+                color: #000
+            }
+        }
+        &__text{
+            position: relative;
+            top: 180px;
+            left: 90px;
+            margin-bottom: 30px;
+            width: 385px;
+            &-t{
+                color: #000;
+                font-size: 14px;
+            }
+        }
+        &__btn{
+            position: relative;
+            top: 190px;
+            width: 425px;
+            display: flex;
+            justify-content: center;
+            &-t{
+                font-size: 12px;
+                color: #fff;
+                background-color: #7B61FF;
+                padding: 17px 20px;
+                border-radius: 15px;
+                transition: .5s;
+            }
+        }
+    }
+
+    .piter__map{
+        position: relative;
+        top: -220px;
+        &-wrap{
+            display: flex;
+            flex-direction: column;
+        }
+        &-karta{
+            position: relative;
+            left: -15px;
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+        &-t{
+            font-size: 26px;
+        }
+        &-m{
+            margin-top: 30px;
+            margin-bottom: -120px;
+        }
+    }
+
+    .map{
+        &-link{
+            width: 385px;
+            height: 300px;
+        }
+    }
+
+    .footer{
+        height: 500px;
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+        }
+        &__logo{
+            display: none;
+        }
+        &__link{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        &__image{
+            gap: 10px;
+            margin-top: 10px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+    }
+    .footer.black{
+        height: 500px;
+    }
+}
